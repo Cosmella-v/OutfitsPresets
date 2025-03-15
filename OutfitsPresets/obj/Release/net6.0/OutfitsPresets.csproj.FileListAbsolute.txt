@@ -1,0 +1,10 @@
+C:\Users\momo2\Downloads\balls\OutfitsPresets\OutfitsPresets\bin\Release\net6.0\OutfitsPresets.deps.json
+C:\Users\momo2\Downloads\balls\OutfitsPresets\OutfitsPresets\bin\Release\net6.0\OutfitsPresets.dll
+C:\Users\momo2\Downloads\balls\OutfitsPresets\OutfitsPresets\obj\Release\net6.0\OutfitsPresets.csproj.AssemblyReference.cache
+C:\Users\momo2\Downloads\balls\OutfitsPresets\OutfitsPresets\obj\Release\net6.0\OutfitsPresets.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\momo2\Downloads\balls\OutfitsPresets\OutfitsPresets\obj\Release\net6.0\OutfitsPresets.AssemblyInfoInputs.cache
+C:\Users\momo2\Downloads\balls\OutfitsPresets\OutfitsPresets\obj\Release\net6.0\OutfitsPresets.AssemblyInfo.cs
+C:\Users\momo2\Downloads\balls\OutfitsPresets\OutfitsPresets\obj\Release\net6.0\OutfitsPresets.csproj.CoreCompileInputs.cache
+C:\Users\momo2\Downloads\balls\OutfitsPresets\OutfitsPresets\obj\Release\net6.0\OutfitsPresets.dll
+C:\Users\momo2\Downloads\balls\OutfitsPresets\OutfitsPresets\obj\Release\net6.0\refint\OutfitsPresets.dll
+C:\Users\momo2\Downloads\balls\OutfitsPresets\OutfitsPresets\obj\Release\net6.0\ref\OutfitsPresets.dll

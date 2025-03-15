@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\OutfitsPresets\\OutfitsPresets.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\OutfitsPresets\\OutfitsPresets.csproj": {
+      "version": "1.0.0-dev",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\OutfitsPresets\\OutfitsPresets.csproj",
+        "projectName": "OutfitsPresets",
+        "projectPath": "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\OutfitsPresets\\OutfitsPresets.csproj",
+        "packagesPath": "C:\\Users\\momo2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\OutfitsPresets\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\NuGet.Config",
+          "C:\\Users\\momo2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.bepinex.dev/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AmongUs.GameLibs.Steam": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2024.10.29, )"
+            },
+            "BepInEx.AutoPlugin": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "BepInEx.IL2CPP.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0-rc.1, )"
+            },
+            "BepInEx.Unity.IL2CPP": {
+              "target": "Package",
+              "version": "[6.0.0-be.697, )"
+            },
+            "Reactor": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
