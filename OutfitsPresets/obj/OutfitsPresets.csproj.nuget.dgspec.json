@@ -61,10 +61,6 @@
             "BepInEx.Unity.IL2CPP": {
               "target": "Package",
               "version": "[6.0.0-be.697, )"
-            },
-            "Reactor": {
-              "target": "Package",
-              "version": "[2.0.0, )"
             }
           },
           "imports": [

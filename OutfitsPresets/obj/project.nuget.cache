@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YACL3EMklSJ5+xyW/49/rdNpNVf5DCKA+nIqlMWDxjrvq9sXg/x8GJIvoBWAHD9+w2GT1uOA7tmYZvMOHkCGvA==",
+  "dgSpecHash": "+Xm1kCxnY8neXQw1QpVcsw7oDPhd0V/YhgkhEeok1vyLmEzBs5oH2Jrp1wsMkbhpKQuQQ69bOQLcHCs7sG29EQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\OutfitsPresets\\OutfitsPresets.csproj",
   "expectedPackageFiles": [
@@ -30,7 +30,6 @@
     "C:\\Users\\momo2\\.nuget\\packages\\mono.cecil\\0.11.4\\mono.cecil.0.11.4.nupkg.sha512",
     "C:\\Users\\momo2\\.nuget\\packages\\monomod.runtimedetour\\22.5.1.1\\monomod.runtimedetour.22.5.1.1.nupkg.sha512",
     "C:\\Users\\momo2\\.nuget\\packages\\monomod.utils\\22.5.1.1\\monomod.utils.22.5.1.1.nupkg.sha512",
-    "C:\\Users\\momo2\\.nuget\\packages\\reactor\\2.0.0\\reactor.2.0.0.nupkg.sha512",
     "C:\\Users\\momo2\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\momo2\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\momo2\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

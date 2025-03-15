@@ -3,10 +3,6 @@ using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
-using Reactor;
-using Reactor.Networking;
-using Reactor.Utilities;
-using Reactor.Utilities.Extensions;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -242,7 +238,7 @@ public partial class OutfitsPresetsPlugin : BasePlugin
                */
                 var editName = FastDestroyableSingleton<AccountManager>.Instance.accountTab.editNameScreen;
                 var nameText = Object.Instantiate(editName.nameText.gameObject, popup.gameObject.transform);
-                nameText.GetComponent<NameTextBehaviour>().Destroy();
+                NameTextBehaviour.Destroy(nameText.GetComponent<NameTextBehaviour>());
                 var Background = nameText.transform.Find("Background");
                 var textBox = nameText.GetComponent<TextBoxTMP>();
                 textBox.outputText.alignment = TextAlignmentOptions.CenterGeoAligned;
@@ -263,8 +259,8 @@ public partial class OutfitsPresetsPlugin : BasePlugin
                 nameText.transform.localPosition = new(0, 0.15f, -2);
                 btn.GetComponent<PassiveButton>().OnClick.AddListener((System.Action)delegate ()
                 {
-                    popup.gameObject.Destroy();
-                    popup.Destroy();
+                    Object.Destroy(popup.gameObject);
+                    Object.Destroy(popup);
                 });
                 Deny.GetComponent<PassiveButton>().OnClick.AddListener((System.Action)delegate ()
                 {
@@ -284,8 +280,7 @@ public partial class OutfitsPresetsPlugin : BasePlugin
                         FileUtils.SaveFile(textBox.text, content);
                     }
                     LoadTab(__instance);
-                    popup.gameObject.Destroy();
-                    popup.Destroy();
+                    Object.Destroy(popup.gameObject);
                 });
             });
 
