@@ -26,7 +26,6 @@ namespace OutfitsPresets;
 
 [BepInAutoPlugin]
 [BepInProcess("Among Us.exe")]
-[BepInDependency(ReactorPlugin.Id)]
 public partial class OutfitsPresetsPlugin : BasePlugin
 {
     public Harmony Harmony { get; } = new(Id);
