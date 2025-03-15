@@ -4,9 +4,9 @@
         <LangVersion>latest</LangVersion>
         <DebugType>embedded</DebugType>
 
-        <VersionPrefix>1.0.0</VersionPrefix>
-        <VersionSuffix>dev</VersionSuffix>
-        <Description>Mod generated using Reactor Template</Description>
+        <VersionPrefix>1.0.1</VersionPrefix>
+        <VersionSuffix>release</VersionSuffix>
+        <Description>Save Outfits ingame</Description>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <!-- <Authors>your name</Authors> -->
     </PropertyGroup>

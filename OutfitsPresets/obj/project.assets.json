@@ -4818,7 +4818,7 @@
     "C:\\Users\\momo2\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0-dev",
+    "version": "1.0.1-release",
     "restore": {
       "projectUniqueName": "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\OutfitsPresets\\OutfitsPresets.csproj",
       "projectName": "OutfitsPresets",

@@ -1,14 +1,10 @@
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using TMPro;
 using UnityEngine;
-using System.Windows;
 namespace OutfitsPresets;
 class FileUtils
 {
-    public static System.Collections.Generic.List<string> Files = new List<string>{"x"};
+    public static System.Collections.Generic.List<string> Files = new System.Collections.Generic.List<string>{""};
     public static System.Collections.Generic.List<string> GetPath()
     {
         string Outfits = Path.Combine(

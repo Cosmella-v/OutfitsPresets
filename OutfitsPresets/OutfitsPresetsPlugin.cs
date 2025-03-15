@@ -3,19 +3,11 @@ using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
-using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
 using System.Text.Json;
-using Epic.OnlineServices.Mods;
-using static Rewired.Controller;
-using Il2CppInterop.Runtime.Injection;
-using UnityEngine.UI;
 using OutfitsPresets.FastDestroyableSingleton;
-using System.Security.Cryptography;
-using static Rewired.Utils.Classes.Data.SerializedObject;
-using static Rewired.Data.CustomController_Editor;
 using System.IO;
 
 namespace OutfitsPresets;
@@ -73,7 +65,6 @@ public partial class OutfitsPresetsPlugin : BasePlugin
         {
             DataManager.Player.Customization.Hat = hatname;
             var hat = FastDestroyableSingleton<HatManager>.Instance.GetHatById(hatname);
-            FakeNameTab.currentHat = hat;
 
             if (PlayerControl.LocalPlayer)
             {
@@ -102,7 +93,6 @@ public partial class OutfitsPresetsPlugin : BasePlugin
         public static void ClickEquipPet(string RpcSetPet)
         {
             DataManager.Player.Customization.Pet = RpcSetPet;
-
             if (PlayerControl.LocalPlayer)
             {
                 PlayerControl.LocalPlayer.RpcSetPet(RpcSetPet);
@@ -138,7 +128,7 @@ public partial class OutfitsPresetsPlugin : BasePlugin
         }
 
 
-        public static HatsTab FakeNameTab;
+        public static SkinsTab FakeNameTab;
         public static void push(PlayerCustomizationMenu __instance)
         {
             __instance.OpenTab(FakeNameTab);
@@ -412,14 +402,13 @@ public partial class OutfitsPresetsPlugin : BasePlugin
             FakeNameTab.SetScrollerBounds();
 
         }
-        [HarmonyPatch(nameof(PlayerCustomizationMenu.Update))]
-        [HarmonyPostfix]
-        public static void Update_Postfix(PlayerCustomizationMenu __instance)
+        [HarmonyPatch(nameof(PlayerCustomizationMenu.Start))]
+        [HarmonyPrefix]
+        public static bool Start_Prefix(PlayerCustomizationMenu __instance)
         {
-            if (!FakeNameTab)
-            {
+            if (FakeNameTab) { return true; };
                 TabButton TabList = new TabButton();
-                FakeNameTab = Object.Instantiate(__instance.Tabs[1].Tab, __instance.Tabs[1].Tab.transform.parent).TryCast<HatsTab>();
+                FakeNameTab = Object.Instantiate(__instance.Tabs[2].Tab, __instance.Tabs[2].Tab.transform.parent).TryCast<SkinsTab>();
                 FakeNameTab.name = "Outfits Presets";
                 FakeNameTab.gameObject.active = false;
                 TabList.Tab = FakeNameTab;
@@ -444,8 +433,7 @@ public partial class OutfitsPresetsPlugin : BasePlugin
                 var tabsList = __instance.Tabs.ToList();
                 tabsList.Add(TabList);
                 __instance.Tabs = tabsList.ToArray();
-            }
-          
+            return true;
         }
 
     }
