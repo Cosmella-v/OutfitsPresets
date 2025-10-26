@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jyKD9MLDZsJDAW9fF9qmMFAHp9eqtVYhlei15ItJDgYALvTLi7+fGu8Rlvg/U52N0V0usx1X6TKvBkQEY7PpTA==",
+  "dgSpecHash": "0j/wyqbsNJQzTDYEhlnJFOhgKx/7FppMd3TzQjX2zovpGP16T4hDfkUFwxAzD1HlVYi1sT8oalaYTAa1kBBxUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\OutfitsPresets\\OutfitsPresets.csproj",
+  "projectFilePath": "E:\\Download.backup\\balls\\OutfitsPresets\\OutfitsPresets\\OutfitsPresets.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\momo2\\.nuget\\packages\\amongus.gamelibs.steam\\2024.10.29\\amongus.gamelibs.steam.2024.10.29.nupkg.sha512",
     "C:\\Users\\momo2\\.nuget\\packages\\asmresolver\\5.5.0\\asmresolver.5.5.0.nupkg.sha512",

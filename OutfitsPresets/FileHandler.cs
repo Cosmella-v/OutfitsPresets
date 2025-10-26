@@ -44,12 +44,12 @@ class FileUtils
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine("Error reading file: " + ex.Message);
+                OutfitsPresets.OutfitsPresetsPlugin.mls.LogError("Error reading file: " + ex.Message);
             }
         }
         else
         {
-            System.Diagnostics.Debug.WriteLine("File does not exist: " + filePath);
+            OutfitsPresets.OutfitsPresetsPlugin.mls.LogDebug("File does not exist: " + filePath);
         }
 
         return null;
@@ -79,7 +79,7 @@ class FileUtils
         }
         catch (Exception ex)
         {
-            System.Diagnostics.Debug.WriteLine($"Failed to save file: {ex.Message}");
+            OutfitsPresets.OutfitsPresetsPlugin.mls.LogError($"Failed to save file: {ex.Message}");
             return false;
         }
     }

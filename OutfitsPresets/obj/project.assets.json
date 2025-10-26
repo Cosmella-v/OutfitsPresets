@@ -1491,6 +1491,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Cosmella.TabApi/1.0.0-release": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BepInEx.Unity.IL2CPP": "6.0.0-be.697"
+        },
+        "compile": {
+          "bin/placeholder/Cosmella.TabApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cosmella.TabApi.dll": {}
+        }
       }
     }
   },
@@ -4804,6 +4817,11 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "Cosmella.TabApi/1.0.0-release": {
+      "type": "project",
+      "path": "../../TabsBuilder/TabsBuilder/TabsBuilder.csproj",
+      "msbuildProject": "../../TabsBuilder/TabsBuilder/TabsBuilder.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4811,23 +4829,24 @@
       "AmongUs.GameLibs.Steam >= 2024.10.29",
       "BepInEx.AutoPlugin >= 1.1.0",
       "BepInEx.IL2CPP.MSBuild >= 2.1.0-rc.1",
-      "BepInEx.Unity.IL2CPP >= 6.0.0-be.697"
+      "BepInEx.Unity.IL2CPP >= 6.0.0-be.697",
+      "Cosmella.TabApi >= 1.0.0-release"
     ]
   },
   "packageFolders": {
     "C:\\Users\\momo2\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.1-release",
+    "version": "1.0.2-release",
     "restore": {
-      "projectUniqueName": "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\OutfitsPresets\\OutfitsPresets.csproj",
+      "projectUniqueName": "E:\\Download.backup\\balls\\OutfitsPresets\\OutfitsPresets\\OutfitsPresets.csproj",
       "projectName": "OutfitsPresets",
-      "projectPath": "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\OutfitsPresets\\OutfitsPresets.csproj",
+      "projectPath": "E:\\Download.backup\\balls\\OutfitsPresets\\OutfitsPresets\\OutfitsPresets.csproj",
       "packagesPath": "C:\\Users\\momo2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\OutfitsPresets\\obj\\",
+      "outputPath": "E:\\Download.backup\\balls\\OutfitsPresets\\OutfitsPresets\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\momo2\\Downloads\\balls\\OutfitsPresets\\NuGet.Config",
+        "E:\\Download.backup\\balls\\OutfitsPresets\\NuGet.Config",
         "C:\\Users\\momo2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4836,13 +4855,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "E:\\Download.backup\\balls\\OutfitsPresets\\libs": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://nuget.bepinex.dev/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Download.backup\\balls\\TabsBuilder\\TabsBuilder\\TabsBuilder.csproj": {
+              "projectPath": "E:\\Download.backup\\balls\\TabsBuilder\\TabsBuilder\\TabsBuilder.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
