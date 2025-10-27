@@ -1,0 +1,44 @@
+# Build output
+**/bin
+**/obj
+**/build
+build-*/
+
+# Compiled files
+*.exe
+*.dll
+*.out
+*.app
+*.so
+*.dylib
+*.o
+*.obj
+*.a
+*.lib
+*.la
+*.lo
+*.mod
+*.smod
+*.gch
+*.pch
+*.slo
+
+# IDE / workspace
+**/.vscode/
+.vs/
+.idea/
+**/.vscode
+**/.vs
+**/.idea
+
+*.sublime-workspace
+
+# Caches
+.history/
+.cache/
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# OS
+**/.DS_Store

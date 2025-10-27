@@ -3,7 +3,6 @@ using System;
 using System.IO;
 using AmongUs.Data;
 using System.Text.Json;
-using OutfitsPresets.FastDestroyableSingleton;
 using TMPro;
 using UnityEngine;
 using Il2CppSystem.Collections.Generic;
@@ -73,7 +72,7 @@ namespace OutfitsPresets
 
         private void SelectHat(string hat, int color)
         {
-            var hatObj = FastDestroyableSingleton<HatManager>.Instance.GetHatById(hat);
+            var hatObj = DestroyableSingleton<HatManager>.Instance.GetHatById(hat);
             this.PlayerPreview.SetHat(hatObj, color);
 
             if (hatObj?.BlocksVisors == true)
@@ -91,19 +90,19 @@ namespace OutfitsPresets
 
         private void SelectSkin(string skin, int color)
         {
-            var skinObj = FastDestroyableSingleton<HatManager>.Instance.GetSkinById(skin);
+            var skinObj = DestroyableSingleton<HatManager>.Instance.GetSkinById(skin);
             this.PlayerPreview.SetSkin(skinObj, color);
         }
 
         private void SelectVisor(string visor, int color)
         {
-            var visorObj = FastDestroyableSingleton<HatManager>.Instance.GetVisorById(visor);
+            var visorObj = DestroyableSingleton<HatManager>.Instance.GetVisorById(visor);
             this.PlayerPreview.SetVisor(visorObj, color);
         }
 
         private void SelectPet(string pet, int color)
         {
-            var petObj = FastDestroyableSingleton<HatManager>.Instance.GetPetById(pet);
+            var petObj = DestroyableSingleton<HatManager>.Instance.GetPetById(pet);
             this.PlayerPreview.SetPetIdle(petObj, color);
         }
 
@@ -299,7 +298,7 @@ namespace OutfitsPresets
             preview.SetHat(outfit.Hat, preview.ColorId);
             preview.SetSkin(outfit.Skin, preview.ColorId);
             preview.SetVisor(outfit.Visor, preview.ColorId);
-            preview.SetPetIdle(FastDestroyableSingleton<HatManager>.Instance.GetPetById(outfit.Pet), preview.ColorId);
+            preview.SetPetIdle(DestroyableSingleton<HatManager>.Instance.GetPetById(outfit.Pet), preview.ColorId);
             preview.cosmetics.transform.Find("PetSlot")?.GetChild(0)?.gameObject.SetActive(false);
             prefab.SelectionHighlight.gameObject.SetActive(false);
         }
@@ -359,7 +358,7 @@ namespace OutfitsPresets
             }
 
 
-            var editName = FastDestroyableSingleton<AccountManager>.Instance.accountTab.editNameScreen;
+            var editName = DestroyableSingleton<AccountManager>.Instance.accountTab.editNameScreen;
             var nameText = UnityEngine.Object.Instantiate(editName.nameText.gameObject, popup.gameObject.transform);
             NameTextBehaviour.Destroy(nameText.GetComponent<NameTextBehaviour>());
             var Background = nameText.transform.Find("Background");

@@ -1,9 +1,9 @@
 {
     "name": "Outfit_Presets",
-    "version_number": "1.0.2",
+    "version_number": "1.0.3",
     "website_url": "https://github.com/Cosmella-v/OutfitsPresets",
     "description": "Save Outfits ingame",
     "dependencies": [
-        "BepInEx-BepInExPack_AmongUs-6.0.700", "Cosmella-TabsBuilderApi-1.0.1"
+        "BepInEx-BepInExPack_AmongUs-6.0.700", "Cosmella-TabsBuilderApi-1.1.0"
     ]
 }

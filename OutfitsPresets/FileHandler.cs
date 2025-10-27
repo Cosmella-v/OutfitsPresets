@@ -1,3 +1,8 @@
+// This file is part of Outfits Presets (https://github.com/Cosmella-v/OutfitsPresets)
+// made by https://github.com/Cosmella-v
+// Copyright (c) 2025 @Cosmella-v
+// Licensed under the GNU GPL v3.0 or later
+// See https://www.gnu.org/licenses/gpl-3.0.txt for details
 using System;
 using System.IO;
 using UnityEngine;

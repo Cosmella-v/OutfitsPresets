@@ -24,4 +24,24 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: OutfitsPresets.dll
-          path: OutfitsPresets/bin/Release/net6.0/OutfitsPresets.dll
+          path: **/Release/net6.0/OutfitsPresets.dll
+      - name: Create ZIP package
+        run: |
+          mkdir -p output
+          ZIP_NAME="Thunderstore.zip"
+          FILES="manifest.json README.md icon.png"
+          if [ -f CHANGELOG.md ]; then
+            FILES="$FILES CHANGELOG.md"
+          fi
+          DLL_PATH=$(find . -path "**/Release/net6.0/OutfitsPresets.dll" | head -n 1)
+          if [ -f "$DLL_PATH" ]; then
+            FILES="$FILES $DLL_PATH"
+          fi
+          zip -r "output/$ZIP_NAME" $FILES
+          echo "Created output/$ZIP_NAME"
+
+      - name: Upload Thunderstore's ZIP package
+        uses: actions/upload-artifact@v4
+        with:
+          name: Thunderstore.zip
+          path: output/Thunderstore.zip
