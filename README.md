@@ -16,3 +16,5 @@
 "Color" :colorindex,
 "Pet" :"petid"
 }`
+
+> uses api at https://github.com/Cosmella-v/OutfitsPresets/releases/latest
