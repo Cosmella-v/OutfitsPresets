@@ -4,7 +4,7 @@
 		<LangVersion>latest</LangVersion>
 		<DebugType>embedded</DebugType>
 
-		<VersionPrefix>1.0.2</VersionPrefix>
+		<VersionPrefix>1.0.4</VersionPrefix>
 		<VersionSuffix>release</VersionSuffix>
 		<Description>Save Outfits ingame</Description>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -21,7 +21,7 @@
 		<PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.697" />
 
 		<PackageReference Include="BepInEx.AutoPlugin" Version="1.1.0" PrivateAssets="all" />
-		<PackageReference Include="Cosmella.TabApi" Version="1.0.0-release" />
+		<PackageReference Include="Cosmella.TabApi" />
 	</ItemGroup>
 	<ItemGroup>
 		<EmbeddedResource Include="../Assets/*.png" />
