@@ -24,7 +24,8 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: OutfitsPresets.dll
-          path: **/Release/net6.0/OutfitsPresets.dll
+          path: |
+            **/Release/net6.0/OutfitsPresets.dll
       - name: Create ZIP package
         run: |
           mkdir -p output
