@@ -21,7 +21,7 @@
 		<PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.697" />
 
 		<PackageReference Include="BepInEx.AutoPlugin" Version="1.1.0" PrivateAssets="all" />
-		<PackageReference Include="Cosmella.TabApi" Version="*"/>
+		<PackageReference Include="Cosmella.TabApi" Version="*-release"/>
 	</ItemGroup>
 	<ItemGroup>
 		<EmbeddedResource Include="../Assets/*.png" />
