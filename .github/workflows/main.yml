@@ -15,26 +15,6 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 6.x
-      
-      - name: Check local packages
-        run: |
-          echo "Listing local packages folder..."
-          if [ -d "./local.packages" ]; then
-            ls -R ./local.packages
-          else
-            echo "local.packages folder does not exist!"
-            exit 1
-          fi
-
-      - name: Check local packages again
-        run: |
-          echo "Listing local packages folder..."
-          if [ -d "../local.packages" ]; then
-            ls -R ../local.packages
-          else
-            echo "local.packages folder does not exist!"
-            exit 1
-          fi
 
       - name: Restore .NET packages from local folder
         run: dotnet restore ./OutfitsPresets.sln --source ./local.packets
