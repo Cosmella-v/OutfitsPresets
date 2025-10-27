@@ -33,10 +33,9 @@ jobs:
       - name: Prepare artifact folder
         run: |
           mkdir -p artifact
-          cp **/*.dll artifact/
-          cp manifest.json artifact/
-          cp README.md artifact/
-          cp icon.png artifact/
+          find . -type f -name "*.dll" -path "*/Release/*" -exec cp {} artifact/ \;
+          
+          cp manifest.json README.md icon.png artifact/
           if [ -f CHANGELOG.md ]; then
             cp CHANGELOG.md artifact/
           fi
