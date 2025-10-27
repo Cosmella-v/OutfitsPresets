@@ -17,4 +17,4 @@
 "Pet" :"petid"
 }`
 
-> uses api at https://github.com/Cosmella-v/OutfitsPresets/releases/latest
+> uses api at https://github.com/Cosmella-v/TabsBuilderApi/releases/latest
