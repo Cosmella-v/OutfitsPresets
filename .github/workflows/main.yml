@@ -15,7 +15,10 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 6.x
-
+      
+      - name: Restore .NET packages from local folder
+            run: dotnet restore ./OutfitsPresets/OutfitsPresets.sln --source ./OutfitsPresets/local.packages
+        
       - name: Run the Cake script
         uses: cake-build/cake-action@v1
         with:

@@ -4,6 +4,15 @@ var workflow = BuildSystem.GitHubActions.Environment.Workflow;
 var buildId = workflow.RunNumber;
 var tag = workflow.RefType == GitHubActionsRefType.Tag ? workflow.RefName : null;
 
+Task("Restore")
+    .Does(() =>
+{
+    DotNetRestore("./OutfitsPresets.sln", new DotNetRestoreSettings
+    {
+        Sources = new[] { "./local.packages" }
+    });
+});
+
 Task("Build")
     .Does(() =>
 {
